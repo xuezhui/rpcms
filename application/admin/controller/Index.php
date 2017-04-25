@@ -10,6 +10,9 @@ use think\Controller;
 
 class Index extends Controller
 {
+    function _initialize(){
+        $this->assign('version','?v='.date('Ymd',time()));   
+    }
   
     /**
      * 首页
