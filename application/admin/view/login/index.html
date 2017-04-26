@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head lang="zh-CN">
+  <meta charset="UTF-8">
+  <title>RPCMS后台管理系统</title>
+  <meta name="author" content="Bugstar">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="format-detection" content="telephone=no">
+  <meta name="renderer" content="webkit">
+  <meta http-equiv="Cache-Control" content="no-siteapp" />
+  <link rel="alternate icon" type="image/png" href="/assets/i/favicon.png{$version}">
+  <link rel="stylesheet" href="/assets/css/amazeui.min.css{$version}"/>
+  <style>
+    .header {
+      text-align: center;
+    }
+    .header h1 {
+      font-size: 200%;
+      color: #333;
+      margin-top: 30px;
+    }
+    .header p {
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+<div class="header">
+  <div class="am-g">
+    <h1>RPCMS后台管理系统</h1>
+  </div>
+</div>
+<div class="am-g">
+  <div class="am-u-lg-4 am-u-md-8 am-u-sm-centered">
+    <h3>登录</h3>
+    <hr /> 
+    <form method="post" action="" class="am-form" autocomplete="off">
+      <label for="username">账号:</label>
+      <input type="text" class="am-round" name="username" id="username" value="" placeholder="请输入 账号">
+      <br>
+      <label for="password">密码:</label>
+      <input type="password" class="am-round" name="password" id="password" value="" placeholder="请输入 密码">
+      <br>
+      <label for="remember-me">
+        <input id="remember-me" type="checkbox" name="remember">
+        记住密码
+      </label>
+      {$loginToken}
+      <br />
+      <div class="am-cf">
+        <input type="submit" name="btn_login" value="登 录" class="am-btn am-btn-primary am-btn-sm am-fl">
+        <input type="button" name="btn_forget" value="忘记密码 ? " class="am-btn am-btn-default am-btn-sm am-fr">
+      </div>
+      <br />
+      <div class="am-u-sm-centered">
+        <a href="" class="am-icon-btn am-icon-qq"></a>
+	    <a href="" class="am-icon-btn am-icon-wechat"></a>
+	    <a href="" class="am-icon-btn am-icon-weibo"></a>
+        <a href="" class="am-icon-btn am-icon-twitter"></a>
+	    <a href="" class="am-icon-btn am-icon-facebook"></a>
+	    <a href="" class="am-icon-btn am-icon-github"></a>
+	  </div>
+    </form>
+    <hr />
+    <blockquote>
+	  <p>Talk is cheap. Show me the code.光说没有用.给我看代码.</p>
+	  <small>--Linus。莱纳斯</small>
+	</blockquote>
+    <p>© 2017 Powered by RPCMS</p>
+  </div>
+</div>
+</body>
+</html>
