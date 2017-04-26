@@ -18,7 +18,7 @@
   以获得更好的体验！</p>
 <![endif]-->
 
-<header class="am-topbar am-topbar-inverse admin-header">
+<header class="am-topbar admin-header">
   <div class="am-topbar-brand">
     <strong>RPCMS</strong> <small>后台管理系统</small>
   </div>
@@ -34,9 +34,9 @@
           <span class="am-icon-users"></span> 管理员 <span class="am-icon-caret-down"></span>
         </a>
         <ul class="am-dropdown-content">
-          <li><a href=""><span class="am-icon-user"></span> 资料</a></li>
+          <li><a href="{:url('Index/user',array('token'=>$token))}"><span class="am-icon-user"></span> 资料</a></li>
           <li><a href=""><span class="am-icon-cog"></span> 设置</a></li>
-          <li><a href="{:url('Index/loginOut')}"><span class="am-icon-power-off"></span> 退出</a></li>
+          <li><a href="{:url('Login/out')}"><span class="am-icon-power-off"></span> 退出</a></li>
         </ul>
       </li>
       <li class="am-hide-sm-only"><a href="javascript:;" id="admin-fullscreen"><span class="am-icon-arrows-alt"></span> <span class="admin-fullText">开启全屏</span></a></li>
